@@ -1,0 +1,16 @@
+.formulario{
+    border: 1px solid black;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.formfield{
+    display: inline-block;
+    width: 40%;
+    border-radius: 10px;    
+}
+
+.formlabel{
+    display: inline-block;
+    font-family: Arial, sans-serif;
+}

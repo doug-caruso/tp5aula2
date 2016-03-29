@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="css/formulario.css" title="Tema 1">
+        <title>Formulario</title>
+    </header>
+    
+    <body>
+        <div class="formulario">
+            <form action="http://labs.edysegura.com/requests/">
+                <fieldset>
+                        <legend>Informações Pessoais</legend>
+                        <p><label class="formlabel">Nome: </label>
+                        <input class="formfield" type="text" name="nome"></p>
+                        <p><label class="formlabel">Endereço: </label>
+                        <input class="formfield" type="text" name="endereço"></p> 
+                        <p><label class="formlabel">Cidade: </label>
+                        <input class="formfield" type="text" name="cidade"> </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Histórico Médico</legend>
+                    <input type="checkbox" name="doenca[]" value="Dengue">Dengue<br>
+                    <input type="checkbox" name="doenca[]" value="Zika">Zika<br>
+                    <input type="checkbox" name="doenca[]" value="Chikungunya">Chikungunya<br>
+                    <input type="checkbox" name="doenca[]" value="Gripo">Gripe<br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Medicação Atual</legend>
+                    <p>Utiliza algum medicamento?</p>
+                    <input type="radio" name="medicamento" value="true"> Sim<br>
+                    <input type="radio" name="medicamento" value="false"> Não
+                    <p>Quais?</p>
+                    <textarea name="medicação" rows="4" cols="50"></textarea>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>    
+    </body>
